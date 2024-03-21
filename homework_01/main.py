@@ -44,7 +44,7 @@ number2 = 32.4
 print(number1, type(number1))
 print(number2, type(number2))
 
-# 4. Declare and assign two variables with your name, age and city details and print each of them with proper descriptions.
+# 4.Declare and assign three variables with your name, age and city details and print each of them with proper descriptions.
 
 # declare variables for name, age and city
 first_name = "Milica"
@@ -97,7 +97,7 @@ print(area_of_rectangle)
 print("The '=' operator in Python is the assignment operator. It assigns a value to a variable. On the other hand, the '==' operator is the equality operator. It compares two values to check if they are equal in both value and type.")
 
 # 9. Declare the below variables a = 5, b = 3, c = 10.
-# i. Check whether the value of a + b \* c equals 80 or not and print its boolean result
+# i. Check whether the value of a + b * c equals 80 or not and print its boolean result
 # ii. Check whether the value of a / b + c equals 15 and print the boolean result
 
 # declaring variables
