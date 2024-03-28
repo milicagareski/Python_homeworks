@@ -69,29 +69,29 @@ else:
 
 # Program that determines the state of a steak based on the time it was grilled.
 
-def state_od_stake(cook_time):
-  state = "burns"
+def state_od_steak(cook_time):
   if cook_time < 2:
-    state = "rare"
+    return "rare"
   elif cook_time <= 4:
-    state = "medium"
+    return "medium"
   elif cook_time <= 8:
-    state = "well done"
-  return state
+    return "well done"
+  else:
+    return "burns"
   
-wantedSteak1 = "medium"
-wantedSteak2 = "well done"
+wanted_state1 = "medium"
+wanted_state2 = "well done"
 
-steak1 = state_od_stake(3)
-steak2 = state_od_stake(10)
+steak1 = state_od_steak(3)
+steak2 = state_od_steak(10)
 
-def resultOfCooking(stateStake, wantedSteak):
-  if stateStake == wantedSteak:
+def result_of_cooking(state_steak, wanted_state):
+  if state_steak == wanted_state:
     print("The steak is perfect!")
   else:
     print("You ruined the steak, your friend is furious!")
 
-resultOfCooking(wantedSteak1, steak1)
+result_of_cooking(wanted_state1, steak1)
 
-resultOfCooking(wantedSteak2, steak2)
+result_of_cooking(wanted_state2, steak2)
 
