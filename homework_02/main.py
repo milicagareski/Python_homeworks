@@ -51,47 +51,30 @@ else:
 
 # TASK NUMBER 3:
 
-# Write the cooking time
-cooking_time = int(input("How much time did you cook the steak? "))
-
-# Printing the state of the steak depends on the cooking time
-state_state = "burns"
-
-if cooking_time < 2:
-  print("The steak is rare")
-elif cooking_time <= 4:
-  print("The steak is medium")
-elif cooking_time > 4 and cooking_time <= 8:
-  print("The steak is well done")
-else:
-  print("The steak burns")
-
-
 # Program that determines the state of a steak based on the time it was grilled.
 
-def state_od_steak(cook_time):
-  if cook_time < 2:
-    return "rare"
-  elif cook_time <= 4:
-    return "medium"
-  elif cook_time <= 8:
-    return "well done"
+def check_steak_state(grill_time, desired_state): 
+  if grill_time < 2: 
+    state = "rare"      
+  elif grill_time <= 4: 
+    state = "medium" 
+  elif grill_time < 8: 
+    state = "well done" 
   else:
-    return "burns"
+    state = "burnt" 
+
+  if state == desired_state: 
+    print("The steak is perfect!") 
+  else: 
+    print("You ruined the steak, your friend is furious!") 
   
-wanted_state1 = "medium"
-wanted_state2 = "well done"
-
-steak1 = state_od_steak(3)
-steak2 = state_od_steak(10)
-
-def result_of_cooking(state_steak, wanted_state):
-  if state_steak == wanted_state:
-    print("The steak is perfect!")
-  else:
-    print("You ruined the steak, your friend is furious!")
-
-result_of_cooking(wanted_state1, steak1)
-
-result_of_cooking(wanted_state2, steak2)
+ 
+# Test cases 
+steak1_time = 3 
+steak1_desired_state = "medium" 
+check_steak_state(steak1_time, steak1_desired_state)
+ 
+steak2_time = 10 
+steak2_desired_state = "well done" 
+check_steak_state(steak2_time, steak2_desired_state)
 
