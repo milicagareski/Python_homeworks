@@ -3,10 +3,10 @@
 # Variables for user inputs
 first_name = input("Write your first name: ")
 last_name = input("Write your last name: ")
-are_equal = False
 
 #Comparing inputs
 try:
+  are_equal = False
   if first_name == last_name:
     are_equal = True
     print(f'{are_equal}, Your first name is the same as your last name')
