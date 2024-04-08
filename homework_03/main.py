@@ -1,17 +1,17 @@
 #TASK NUMBER 1:
 
 # Variables for user inputs
-first_name = input("Write your first name: ")
-last_name = input("Write your last name: ")
+str1 = input("Enter some string : ")
+str2 = input("Enter some string : ")
 
 #Comparing inputs
 try:
   are_equal = False
-  if first_name == last_name:
+  if str1 == str2:
     are_equal = True
-    print(f'{are_equal}, Your first name is the same as your last name')
+    print(f'{are_equal}, the first string is equal to the second string')
   else:
-    print(f'{are_equal}, Your first name and your last name are not the same')
+    print(f'{are_equal}, the first string is NOT equal to the second string')
 except Exception as e:
   print(e)
 
@@ -43,16 +43,14 @@ numbers = input("Write at least 2 numbers separated by comma: ")
 # Try-except block
 try:
   list_of_numbers = numbers.split(",")
-  new_list = []
   count = 0
-  # Iterating through the user input and appending every user number in the list
-  for number in list_of_numbers:
-    new_list.append(float(number))
-  for number in new_list:
-    count += number
+  # Iterating through the user input
+  for number in list_of_numbers:    
+    count += float(number)
   print(count)
 except Exception as e:
   print(e)
+
 
 
 
