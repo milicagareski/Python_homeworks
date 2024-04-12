@@ -35,8 +35,7 @@ ask_user()
    
 # for()
 
-# The code can not be executed, because for is a reserved word in python and we can not use it like name of function or variable.
-# When I try to run the code,there is no result, instead I got syntax error, that stayes for restrict name of the function.
+# The code cannot be executed because 'for' is a reserved word in Python, and we cannot use it as the name of a function or variable. When I try to run the code, there is no result; instead, I get a syntax error, because od using keyword "for" for function name
 
 # TASK NUMBER 5
 
