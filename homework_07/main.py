@@ -42,12 +42,20 @@ print(book4.name, book4.number_of_pages, book4.year_of_movie, book4.number_of_mo
 
 # TASK NUMBER 2
 
+
+#1
 # Parent class is Spell
 # Children classes are Accio and Confundo
+
+#2
 # spell.execute will print Action
 # study_spell(spell) will print Summoning Charm Action and no description
 # study_spell(Confugio()) will execute the Confugio class and will print Confundus Charm Confugio and 
 # causes the viktim to become confused and befuddled
+
+#3
+# When we call Confugio Class, the code will execute get description function from the Confugio class, because this function will 
+# overwrite the get description function from the Spell class
 
 
 # TASK NUMBER 3
