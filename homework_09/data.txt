@@ -1,0 +1,5 @@
+name:ali email:ali@gmail.com phone_number=182718727 address:street_abc
+name:john email:john@gmail.com phone_number=282718727 address:street_def
+name:jane email:jane@gmail.com phone_number=382718727 address:street_ghi
+name:anna email:anna@gmail.com phone_number=482718727 address:street_jkl
+name:sarah email:sarah@gmail.com phone_number=582718727 address:street_mno
