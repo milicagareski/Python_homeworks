@@ -9,18 +9,10 @@ def create_file():
       file1 = open(f"{file_name}.txt", "a")
       file1.write(user_name + "\n")
 
-# create_file()
+create_file()
 
 # TASK NUMBER 2
 
-
-# you have name,email,phone number,and address
-# a. Write a python code which has a simple text file and read the data from the file.
-# - First ask the user whether the user wanted to search or add a new entry .
-# - After selecting the operation, the program will perform that operation.
-# - Ask the user to enter an email address and extract all the name,phone number and
-# address .
-# - Also ask the user to enter the new entry.
 
 def get_and_post_data():
   user_input = input("If you want to search for an entry answer with 'SEARCH'. If you want to add an entry answer with 'ADD'. ")
@@ -56,9 +48,23 @@ def get_and_post_data():
   else:
     print("this keyword is unknown. Enter SEARCH if you want to search throught the database or ADD if you want to add new entry")
 
-  
-
-
-
 
 get_and_post_data()
+
+# 3. TASK NUMBER 3
+
+people = [("Alice", 30), ("Bob", 25), ("Charlie", 35), ("David", 25)]
+
+def sort_people(my_people):
+  for i in range(len(my_people)):
+    for j in range(len(my_people) - i - 1):
+      if my_people[j][1] > my_people[j + 1][1] or \
+        (my_people[j][1] == my_people[j + 1][1] and my_people[j][0] > my_people[j + 1][0]):
+          temp = my_people[j]
+          my_people[j] = my_people[j + 1]
+          my_people[j + 1] = temp
+  return my_people
+
+sorted_people = sort_people(people)
+print(sorted_people)
+
